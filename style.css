@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* css common style  */
+body {
+  scroll-behavior: smooth;
+  font-family: "Mulish", sans-serif;
+}
+
+/* header Style starts  */
+header {
+  background-color: #fff;
+}
+/* nav style  */
+nav {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 53px auto;
+}
+nav .logo-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo-title img {
+  width: 48px;
+  height: auto;
+}
+nav .logo-title h1 {
+  color: #131318;
+  font-size: 36px;
+  font-weight: 800;
+}
+nav .logo-title h1 span {
+  background-image: linear-gradient(45deg, #ff5400, rgb(106, 183, 214));
+  background-clip: text;
+  color: transparent;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  column-gap: 44px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #424247;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+nav ul li .ac-home {
+  font-weight: 700;
+  color: #ff5400;
+}
+.bars {
+  font-size: 25px;
+  color: #131318;
+  display: none;
+}
+
+/*===== Responsive design starts  ===== */
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0 20px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .bars {
+    display: block;
+  }
+}
