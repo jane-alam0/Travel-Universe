@@ -63,17 +63,132 @@ nav ul li .ac-home {
   display: none;
 }
 
+/* banner section style  */
+.banner {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1170px;
+  margin: auto;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.banner h1 {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 800;
+}
+.banner p {
+  color: #fff;
+  text-align: center;
+  width: 60%;
+  margin: 5px auto;
+  font-size: 16px;
+  font-weight: 400;
+}
+.banner-item {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.banner-item div {
+  display: flex;
+  align-items: center;
+  min-width: 174px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 20px;
+}
+.banner-item div input,
+select {
+  border: none;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+}
+.banner-item .search-input {
+  background-color: #ff5400;
+  padding: 0;
+  position: relative;
+}
+.banner-item .search-input input {
+  padding: 20px;
+  background-color: #ff5400;
+  width: 174px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.banner-item .search-input i {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  left: 30px;
+}
+
 /*===== Responsive design starts  ===== */
 
 /* Mobile Responsive */
 @media screen and (max-width: 600px) {
-  nav {
-    padding: 0 20px;
+    /* nav Responsive  */
+    nav {
+      padding: 0 20px;
+    }
+    nav ul {
+      display: none;
+    }
+    nav .bars {
+      display: block;
+    }
+  
+    /* banner Responsive  */
+    .banner {
+      max-width: 95%;
+      height: 600px;
+      margin: 0 auto;
+    }
+    .banner h1{
+        font-size: 45px;
+    }
+    .banner p{
+        width: 90%;
+    }
+  
+    .banner-item{
+      flex-direction: column;
+      width: 80%;
+      margin: 10px auto;
+    }
+    .banner-item div {
+        width: 80%;
+    }
+    .banner-item .search-input {
+        width: 90%;
+    }
+    .banner-item .search-input input {
+        width: 100%;
+    }
+    .banner-item .search-input i {
+        left: 100px;
+    }
   }
-  nav ul {
-    display: none;
-  }
-  nav .bars {
-    display: block;
-  }
-}
+  
