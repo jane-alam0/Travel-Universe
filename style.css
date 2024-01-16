@@ -54,21 +54,21 @@ nav {
   align-items: center;
   margin: 53px auto;
 }
-nav .logo-title {
+.logo-title {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-nav .logo-title img {
-  width: 48px;
+.logo-title img {
+  width: 70px;
   height: auto;
 }
-nav .logo-title h1 {
+.logo-title h1 {
   color: #131318;
   font-size: 36px;
   font-weight: 800;
 }
-nav .logo-title h1 span {
+.logo-title h1 span {
   background-image: linear-gradient(45deg, #ff5400, rgb(106, 183, 214));
   background-clip: text;
   color: transparent;
@@ -319,6 +319,7 @@ main {
 /* newsletter section  */
 .newsletter-section {
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -367,9 +368,42 @@ input[type="email"] {
   font-weight: 400;
 }
 .travel-save h2 {
-  color: #FFF;
-font-size: 32px;
-font-weight: 800;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+/* footer section style  */
+footer {
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background: rgba(19, 19, 24, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  column-gap: 30px;
+}
+footer .socil-icon {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+footer .text-center {
+  width: 60%;
+}
+.socil-icon a {
+  font-size: 24px;
+  color: black;
+}
+.footer-hr {
+  background: rgba(19, 19, 24, 0.1);
+  width: 872px;
+  height: 1px;
+  margin: 40px auto 60px auto;
 }
 
 /*===== Responsive design starts  ===== */
@@ -494,5 +528,13 @@ font-weight: 800;
   .newsletter-img {
     width: 92%;
     margin: 0 auto;
+  }
+
+  /* footer section  */
+  footer .text-center {
+    width: 90%;
+  }
+  .footer-hr{
+    width: 90%;
   }
 }
