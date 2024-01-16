@@ -572,7 +572,7 @@ footer .text-center {
   }
   .deals-banner-item , .dls-banner-item{
     width: 75%;
-    left: 5%;
+    left: 4%;
     bottom: 4%;
   }
   .deals-discounts .ppp{
@@ -584,7 +584,7 @@ footer .text-center {
   }
   .place-content,
   .place-img {
-    width: 80%;
+    width: 90%;
   }
   .place-img p {
     left: 15%;
