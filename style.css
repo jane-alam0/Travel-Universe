@@ -293,6 +293,68 @@ main {
   grid-area: c3;
 }
 
+
+/* Deals & Discounts section  */
+.deals-discounts {
+  margin-top: 120px;
+}
+.deals-discounts .ppp{
+  width: 60%;
+  margin: auto;
+}
+.deals-discounts .price{
+  color: #FF5400;
+font-size: 20px;
+font-weight: 800;
+}
+.deals-banner {
+  margin-top: 40px;
+  background-image: url("Images/Group\ 39.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.deals-banner-item {
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  width: 550px;
+  height: 300px;
+  position: absolute;
+  right: 7%;
+  bottom: 13%;
+  padding: 30px;
+}
+.deals-banner .deals-banner-item div {
+  display: flex;
+}
+.dls-banner{
+  margin-top: 40px;
+  background-image: url("Images/Group\ 40.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.dls-banner-item{
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  width: 550px;
+  height: 300px;
+  position: absolute;
+  left: 7%;
+  bottom: 13%;
+  padding: 30px;
+}
+.dls-banner .dls-banner-item div{
+  display: flex;
+}
 /* place section */
 .place-section {
   display: flex;
@@ -502,16 +564,30 @@ footer .text-center {
     margin: 0 auto;
   }
 
+  /* Deals & Discounts section  */
+  .dls-banner ,.deals-banner{
+    width: 90%;
+    margin: 40px auto;
+    border-radius: 10px;
+  }
+  .deals-banner-item , .dls-banner-item{
+    width: 75%;
+    left: 5%;
+    bottom: 4%;
+  }
+  .deals-discounts .ppp{
+    width: 90%;
+  }
   /* place section  */
   .place-section {
     flex-direction: column;
   }
   .place-content,
   .place-img {
-    width: 90%;
+    width: 80%;
   }
   .place-img p {
-    left: 20%;
+    left: 15%;
   }
 
   /* newsletter section */
@@ -534,7 +610,7 @@ footer .text-center {
   footer .text-center {
     width: 90%;
   }
-  .footer-hr{
+  .footer-hr {
     width: 90%;
   }
 }
