@@ -36,6 +36,12 @@ body {
 .text-center {
   text-align: center;
 }
+.secund-title {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 20px auto;
+}
 /* header Style starts  */
 header {
   background-color: #fff;
@@ -223,7 +229,7 @@ main {
 .destination-img div p {
   position: absolute;
   top: 40%;
-  left: 15%;
+  left: 20%;
   color: #fff;
   text-align: center;
   font-weight: 800;
@@ -251,20 +257,19 @@ main {
 }
 
 /* service section style  */
-.service{
+.service {
   margin-top: 120px;
 }
 .service-container {
   display: grid;
   grid-template-areas:
-   "c1 c1 c2 c2"
-   ". c3 c3 ."
-  ;
+    "c1 c1 c2 c2"
+    ". c3 c3 .";
   justify-content: center;
   gap: 20px;
   align-items: center;
 }
-.service-des{
+.service-des {
   width: 60%;
   margin: 20px auto;
 }
@@ -277,35 +282,72 @@ main {
   border: 1px solid rgba(251, 181, 99, 0.2);
   grid-area: c1;
 }
-.service-card2{
+.service-card2 {
   background-color: rgba(41, 206, 246, 0.05);
-  border: 1px solid rgba(41, 206, 246, 0.20);
+  border: 1px solid rgba(41, 206, 246, 0.2);
   grid-area: c2;
 }
-.service-card3{
+.service-card3 {
   background-color: rgba(251, 181, 99, 0.05);
   border: 1px solid rgba(251, 181, 99, 0.2);
   grid-area: c3;
 }
-.service-card h2 {
-  color: #131318;
-  font-size: 24px;
-  font-weight: 800;
-  margin: 20px auto;
-}
 
 /* place section */
-.place-section{
+.place-section {
   display: flex;
   margin-top: 120px;
   gap: 25px;
 }
-.place-content , .place-img{
+.place-content,
+.place-img {
   width: 46%;
   margin: 0 auto;
 }
-
-
+.place-img {
+  position: relative;
+}
+.place-img p {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  top: 40%;
+  left: 25%;
+}
+/* newsletter section  */
+.newsletter-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-section {
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  height: 340px;
+}
+form input[type="text"],
+input[type="email"] {
+  border-radius: 8px;
+  background-color: rgba(19, 19, 24, 0.05);
+  color: rgba(19, 19, 24, 0.3);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 25px;
+  border: none;
+}
+.newsletter-img {
+  height: 400px;
+  border-radius: 10px;
+}
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
 
 /*===== Responsive design starts  ===== */
 
@@ -384,28 +426,50 @@ main {
     width: 90%;
     margin: 0 auto;
   }
+  .destination-img div p {
+    margin-left: -10%;
+  }
 
   /* service section  */
-  .service-container{
+  .service-container {
     grid-template-areas:
       "c1"
       "c2"
-      "c3"
-    ;
+      "c3";
   }
-  .service-des{
+  .service-des {
     width: 80%;
   }
-  .service-card{
+  .service-card {
     width: 80%;
     margin: 0 auto;
   }
 
   /* place section  */
-  .place-section{
+  .place-section {
     flex-direction: column;
   }
-  .place-content,.place-img{
+  .place-content,
+  .place-img {
     width: 90%;
+  }
+  .place-img p {
+    left: 20%;
+  }
+
+  /* newsletter section */
+  .newsletter-section{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  
+  .form-section{
+    width: 78%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .newsletter-img{
+    width: 92%;
+    margin: 0 auto;
   }
 }
