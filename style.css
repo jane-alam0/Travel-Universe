@@ -205,8 +205,8 @@ main {
   margin-top: 120px;
 }
 .destination-container p {
-  width: 70%;
-  margin: auto;
+  width: 60%;
+  margin: 20px auto;
 }
 .destination-img {
   display: grid;
@@ -264,22 +264,27 @@ main {
   gap: 20px;
   align-items: center;
 }
-
+.service-des{
+  width: 60%;
+  margin: 20px auto;
+}
 .service-card {
   padding: 30px 20px;
   border-radius: 16px;
-  border: 1px solid rgba(251, 181, 99, 0.2);
 }
 .service-card1 {
   background-color: rgba(251, 181, 99, 0.05);
+  border: 1px solid rgba(251, 181, 99, 0.2);
   grid-area: c1;
 }
 .service-card2{
   background-color: rgba(41, 206, 246, 0.05);
+  border: 1px solid rgba(41, 206, 246, 0.20);
   grid-area: c2;
 }
 .service-card3{
   background-color: rgba(251, 181, 99, 0.05);
+  border: 1px solid rgba(251, 181, 99, 0.2);
   grid-area: c3;
 }
 .service-card h2 {
@@ -375,9 +380,11 @@ main {
       "c3"
     ;
   }
-  
+  .service-des{
+    width: 80%;
+  }
   .service-card{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
 }
